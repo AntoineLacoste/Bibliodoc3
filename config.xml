@@ -10,7 +10,7 @@
     <content src="index.html" />
     <gap:plugin name="org.apache.cordova.dialogs" source="plugins.cordova.io" />
     <feature name="Notification">
-        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+        <param name="ios-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
     <access origin="*" />
 </widget>
