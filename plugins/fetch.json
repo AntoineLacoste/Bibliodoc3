@@ -1,10 +1,4 @@
 {
-    "com.msopentech.indexedDB": {
-        "source": {
-            "type": "registry",
-            "id": "com.msopentech.indexedDB"
-        }
-    },
     "org.apache.cordova.dialogs": {
         "source": {
             "type": "registry",
