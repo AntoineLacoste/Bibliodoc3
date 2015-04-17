@@ -27,14 +27,23 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) { 
-        document.addEventListener('deviceready', app.onDeviceReady,false)
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|iemobile)/)) { 
+        document.addEventListener('deviceready', function () {
+    if (navigator.notification) { // Override default HTML alert with native dialog
+        window.alert = function (message) {
+            navigator.notification.alert(
+                message,    // message
+                null,       // callback
+                "Workshop", // title
+                'OK'        // buttonName
+            );
+        };
     }
-    else {
+}, false);
+    } else {
         app.onDeviceReady();
     }
 },
-
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
