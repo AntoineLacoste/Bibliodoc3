@@ -7,7 +7,6 @@
     <author href="http://cordova.io">
         Moi
     </author>
-    <gap:plugin name="org.apache.cordova.dialogs" source="plugins.cordova.io"/>
     <content src="index.html" />
     <access origin="*" />
 </widget>
