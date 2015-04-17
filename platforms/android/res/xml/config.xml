@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.testidb" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
     <name>TestIDB</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -7,7 +8,10 @@
     <author href="http://cordova.io">
         Moi
     </author>
-    <gap:plugin name="org.apache.cordova.dialogs" source="plugins.cordova.io"/>
+    <gap:plugin name="org.apache.cordova.dialogs" source="plugins.cordova.io" />
     <content src="index.html" />
     <access origin="*" />
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
 </widget>
