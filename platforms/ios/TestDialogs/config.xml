@@ -14,17 +14,17 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <name>TestIDB</name>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <name>TestDialogs</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <author href="http://cordova.io">
         Moi
     </author>
-    <gap:plugin name="org.apache.cordova.dialogs" source="plugins.cordova.io" />
     <content src="index.html" />
+    <gap:plugin name="org.apache.cordova.dialogs" source="plugins.cordova.io" />
     <access origin="*" />
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
-    </feature>
 </widget>
