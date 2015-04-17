@@ -4,5 +4,11 @@
             "type": "registry",
             "id": "com.msopentech.indexedDB"
         }
+    },
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.dialogs"
+        }
     }
 }
