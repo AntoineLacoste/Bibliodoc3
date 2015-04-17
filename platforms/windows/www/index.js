@@ -27,30 +27,37 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) { 
-        document.addEventListener('deviceready', function () {
-    if (navigator.notification) { // Override default HTML alert with native dialog
-        window.alert = function (message) {
-            navigator.notification.alert(
-                message,    // message
-                null,       // callback
-                "Workshop", // title
-                'OK'        // buttonName
-            );
-        };
-    }
-}, false);
-    } else {
-        app.onDeviceReady();
-    }
-},
+        console.log('user agent1 : ' + navigator.userAgent);
+        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+                document.addEventListener('deviceready', function () {
+            if (navigator.notification) { // Override default HTML alert with native dialog
+                window.alert = function (message) {
+                    navigator.notification.alert(
+                        message,    // message
+                        null,       // callback
+                        "Workshop", // title
+                        'OK'        // buttonName
+                    );
+                };
+            }
+            }, false);
+        } else {
+            app.onDeviceReady();
+        }
+    },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+    console.log('user agent2 : ' + navigator.userAgent);
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/))
+        alert('anduinMobile');
+    else
         alert('anduin');
-        //testIDB();
+
+    console.log('user agent3 : ' + navigator.userAgent);
+      //  testIDB();
     },
 };
 
