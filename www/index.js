@@ -27,7 +27,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|iemobile)/)) { 
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) { 
         document.addEventListener('deviceready', function () {
     if (navigator.notification) { // Override default HTML alert with native dialog
         window.alert = function (message) {
@@ -49,10 +49,12 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|iemobile)/))
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/))
         alert('anduinMobile');
     else
         alert('anduin');
+
+    console.log('user agent : ' + navigator.userAgent);
         //testIDB();
     },
 };
