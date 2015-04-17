@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -28,13 +28,22 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
     if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) { 
-        document.addEventListener('deviceready', app.onDeviceReady,false)
+        document.addEventListener('deviceready', function () {
+    if (navigator.notification) { // Override default HTML alert with native dialog
+        window.alert = function (message) {
+            navigator.notification.alert(
+                message,    // message
+                null,       // callback
+                "Workshop", // title
+                'OK'        // buttonName
+            );
+        };
     }
-    else {
+}, false);
+    } else {
         app.onDeviceReady();
     }
 },
-
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
