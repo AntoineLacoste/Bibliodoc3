@@ -48,7 +48,7 @@
     }
     catch (ex) {
         // Affichage message erreur
-        var mess1 = new Windows.UI.Popups.MessageDialog(ex.message);
+        alert(ex.message);
         mess1.showAsync();
     }
 }
