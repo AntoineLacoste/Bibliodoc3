@@ -50,7 +50,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         alert('anduin');
-        testIDB();
+        //testIDB();
     },
 };
 
