@@ -45,6 +45,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        navigator.notification.alert("Coucou",null,"Coucou","Coucou");
     }
 };
 
