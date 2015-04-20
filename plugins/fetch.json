@@ -10,12 +10,5 @@
             "type": "registry",
             "id": "com.msopentech.indexedDB"
         }
-    },
-    "cordova-plugin-indexedDB": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/MSOpenTech/cordova-plugin-indexedDB.git",
-            "subdir": "."
-        }
     }
 }
