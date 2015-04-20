@@ -8,6 +8,6 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <!--<gap:plugin name="org.apache.cordova.dialogs" />-->
+    <gap:plugin name="org.apache.cordova.dialogs" />
     <access origin="*" />
 </widget>
