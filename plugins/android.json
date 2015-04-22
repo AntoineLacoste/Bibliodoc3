@@ -18,11 +18,8 @@
         }
     },
     "installed_plugins": {
-        "com.msopentech.indexedDB": {
-            "PACKAGE_NAME": "com.bibliodoc3"
-        },
         "org.apache.cordova.dialogs": {
-            "PACKAGE_NAME": "com.bibliodoc3"
+            "PACKAGE_NAME": "com.bibliodoc1"
         }
     },
     "dependent_plugins": {}

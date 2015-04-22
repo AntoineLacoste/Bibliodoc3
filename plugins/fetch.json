@@ -5,6 +5,12 @@
             "id": "org.apache.cordova.dialogs"
         }
     },
+    "com.msopentech.websql": {
+        "source": {
+            "type": "registry",
+            "id": "com.msopentech.websql"
+        }
+    },
     "com.msopentech.indexedDB": {
         "source": {
             "type": "registry",
