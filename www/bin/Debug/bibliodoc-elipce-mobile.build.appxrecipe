@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ELIPCE-B7</Machine>
+    <WindowsUser>elipce</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>cb20c0d6-1fce-41d5-b733-6594f39693e1</PackageIdentityName>
+    <IntermediateOutputPath>C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\accueil\accueil.css">
+      <PackagePath>pages\accueil\accueil.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\document\document.css">
+      <PackagePath>pages\document\document.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\idbviewer\IndexedDBViewer.css">
+      <PackagePath>pages\idbviewer\IndexedDBViewer.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\marque\marque.css">
+      <PackagePath>pages\marque\marque.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\synchro\synchro.css">
+      <PackagePath>pages\synchro\synchro.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\ariane.png">
+      <PackagePath>images\ariane.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\back.png">
+      <PackagePath>images\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\connexion.png">
+      <PackagePath>images\connexion.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\login.png">
+      <PackagePath>images\login.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\Logo.scale-180.png">
+      <PackagePath>images\Logo.scale-180.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\logo_societe.png">
+      <PackagePath>images\logo_societe.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\logo_societe.scale-180.png">
+      <PackagePath>images\logo_societe.scale-180.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\promo.png">
+      <PackagePath>images\promo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\pwd.png">
+      <PackagePath>images\pwd.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\Square70x70Logo.scale-180.png">
+      <PackagePath>images\Square70x70Logo.scale-180.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\synchro.png">
+      <PackagePath>images\synchro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\touche.png">
+      <PackagePath>images\touche.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\global.js">
+      <PackagePath>js\global.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\librairies\IndexedDBShim.min.js">
+      <PackagePath>js\librairies\IndexedDBShim.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\librairies\IndexedDBViewer.js">
+      <PackagePath>js\librairies\IndexedDBViewer.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\librairies\jquery-1.8.2.win8.js">
+      <PackagePath>js\librairies\jquery-1.8.2.win8.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\librairies\jquery-2.1.1.min.js">
+      <PackagePath>js\librairies\jquery-2.1.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\librairies\Linq2IndexedDB.min.js">
+      <PackagePath>js\librairies\Linq2IndexedDB.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\metier\animation\animation.js">
+      <PackagePath>js\metier\animation\animation.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\metier\bdd\idb.js">
+      <PackagePath>js\metier\bdd\idb.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\metier\outils\array.js">
+      <PackagePath>js\metier\outils\array.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\metier\outils\cryptage.js">
+      <PackagePath>js\metier\outils\cryptage.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\metier\outils\file.js">
+      <PackagePath>js\metier\outils\file.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\accueil\accueil.js">
+      <PackagePath>pages\accueil\accueil.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\document\document.js">
+      <PackagePath>pages\document\document.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\idbviewer\idb.js">
+      <PackagePath>pages\idbviewer\idb.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\marque\marque.js">
+      <PackagePath>pages\marque\marque.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\synchro\synchro.js">
+      <PackagePath>pages\synchro\synchro.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\packages.config">
+      <PackagePath>packages.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\accueil\accueil.html">
+      <PackagePath>pages\accueil\accueil.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\document\document.html">
+      <PackagePath>pages\document\document.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\idbviewer\idb.html">
+      <PackagePath>pages\idbviewer\idb.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\idbviewer\Sample\IndexedDBViewerSample.html">
+      <PackagePath>pages\idbviewer\Sample\IndexedDBViewerSample.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\marque\marque.html">
+      <PackagePath>pages\marque\marque.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\pages\synchro\synchro.html">
+      <PackagePath>pages\synchro\synchro.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.16408</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.16408</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

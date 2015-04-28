@@ -1,0 +1,22 @@
+﻿.accueil section[role=main] {
+   /* margin-left: 120px;
+    margin-right: 120px;
+	padding-top:110px;*/
+}
+
+.touche{
+	display:inline-block;
+	background-image:url("/images/touche.png");
+	margin: 5px;
+	width:102px;
+	height:102px;
+	color:white;
+	font-size:50pt;
+	text-align:center;
+}
+	
+.centrer{
+	text-align:center;
+	margin-left:-5px;
+}
+

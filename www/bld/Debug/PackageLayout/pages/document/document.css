@@ -1,0 +1,48 @@
+﻿.document section {
+	/*margin: auto 120px;*/
+}
+
+.win-listview{
+	margin-top:20px;
+    width: 100%;
+    height:calc(100% - 35px);/* -20 de marge -15 de scroll*/
+}
+  
+.win-item{
+	font-size:37pt;
+	width: 390px;/* 4 colonnes 5 de marge de chaque côté* PAS POSSIBLE DE CALCULER */
+	text-align:center;
+	line-height: 280px;
+    height: 280px;
+	cursor:pointer;
+    display:-ms-flexbox;
+}
+
+.win-item .doc{
+	background-color:#4a4a49;	
+}
+
+.win-item .dossier{
+	background-color:#4a4a49;/*#fad785*/	
+}
+
+.win-item div{
+    width:100%;
+}
+
+.win-item div span{
+    
+  vertical-align:middle;
+  display:inline-block;
+  line-height:normal
+}
+
+/* TABLETTE */
+@media screen and (max-width : 1400px){
+    .win-item{
+	    width: 445px;/* 3 colonnes 1370px en tout et 5 de marge de chaque côté* PAS POSSIBLE DE CALCULER */
+	    text-align:center;
+	    line-height: 230px;
+        height:230px;
+    }
+}

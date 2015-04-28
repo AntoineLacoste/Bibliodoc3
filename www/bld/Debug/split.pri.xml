@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="cb20c0d6-1fce-41d5-b733-6594f39693e1" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="default.html" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/default.html">
+				<Candidate type="Path">
+					<Value>default.html</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="packages.config" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/packages.config">
+				<Candidate type="Path">
+					<Value>packages.config</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="css">
+				<NamedResource name="default.css" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/css/default.css">
+					<Candidate type="Path">
+						<Value>css\default.css</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="ariane.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/ariane.png">
+					<Candidate type="Path">
+						<Value>images\ariane.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="back.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/back.png">
+					<Candidate type="Path">
+						<Value>images\back.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="connexion.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/connexion.png">
+					<Candidate type="Path">
+						<Value>images\connexion.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="login.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/login.png">
+					<Candidate type="Path">
+						<Value>images\login.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_societe.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/logo_societe.png">
+					<Candidate type="Path">
+						<Value>images\logo_societe.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="promo.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/promo.png">
+					<Candidate type="Path">
+						<Value>images\promo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="pwd.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/pwd.png">
+					<Candidate type="Path">
+						<Value>images\pwd.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="smalllogo.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/smalllogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\smalllogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="splashscreen.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/splashscreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\splashscreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/Square30x30Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square30x30Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/Square70x70Logo.png"/>
+				<NamedResource name="storelogo.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/storelogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\storelogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="synchro.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/synchro.png">
+					<Candidate type="Path">
+						<Value>images\synchro.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="touche.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/touche.png">
+					<Candidate type="Path">
+						<Value>images\touche.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="js">
+				<NamedResource name="default.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/default.js">
+					<Candidate type="Path">
+						<Value>js\default.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="global.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/global.js">
+					<Candidate type="Path">
+						<Value>js\global.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="navigator.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/navigator.js">
+					<Candidate type="Path">
+						<Value>js\navigator.js</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="librairies">
+					<NamedResource name="IndexedDBShim.min.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/librairies/IndexedDBShim.min.js">
+						<Candidate type="Path">
+							<Value>js\librairies\IndexedDBShim.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="IndexedDBViewer.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/librairies/IndexedDBViewer.js">
+						<Candidate type="Path">
+							<Value>js\librairies\IndexedDBViewer.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery-1.8.2.win8.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/librairies/jquery-1.8.2.win8.js">
+						<Candidate type="Path">
+							<Value>js\librairies\jquery-1.8.2.win8.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery-2.1.1.min.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/librairies/jquery-2.1.1.min.js">
+						<Candidate type="Path">
+							<Value>js\librairies\jquery-2.1.1.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Linq2IndexedDB.min.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/librairies/Linq2IndexedDB.min.js">
+						<Candidate type="Path">
+							<Value>js\librairies\Linq2IndexedDB.min.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="metier">
+					<ResourceMapSubtree name="animation">
+						<NamedResource name="animation.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/metier/animation/animation.js">
+							<Candidate type="Path">
+								<Value>js\metier\animation\animation.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="bdd">
+						<NamedResource name="idb.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/metier/bdd/idb.js">
+							<Candidate type="Path">
+								<Value>js\metier\bdd\idb.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="outils">
+						<NamedResource name="array.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/metier/outils/array.js">
+							<Candidate type="Path">
+								<Value>js\metier\outils\array.js</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="cryptage.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/metier/outils/cryptage.js">
+							<Candidate type="Path">
+								<Value>js\metier\outils\cryptage.js</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="file.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/js/metier/outils/file.js">
+							<Candidate type="Path">
+								<Value>js\metier\outils\file.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="pages">
+				<ResourceMapSubtree name="accueil">
+					<NamedResource name="accueil.css" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/accueil/accueil.css">
+						<Candidate type="Path">
+							<Value>pages\accueil\accueil.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="accueil.html" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/accueil/accueil.html">
+						<Candidate type="Path">
+							<Value>pages\accueil\accueil.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="accueil.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/accueil/accueil.js">
+						<Candidate type="Path">
+							<Value>pages\accueil\accueil.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="document">
+					<NamedResource name="document.css" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/document/document.css">
+						<Candidate type="Path">
+							<Value>pages\document\document.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="document.html" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/document/document.html">
+						<Candidate type="Path">
+							<Value>pages\document\document.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="document.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/document/document.js">
+						<Candidate type="Path">
+							<Value>pages\document\document.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="home">
+					<NamedResource name="home.css" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/home/home.css">
+						<Candidate type="Path">
+							<Value>pages\home\home.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="home.html" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/home/home.html">
+						<Candidate type="Path">
+							<Value>pages\home\home.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="home.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/home/home.js">
+						<Candidate type="Path">
+							<Value>pages\home\home.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="idbviewer">
+					<NamedResource name="idb.html" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/idbviewer/idb.html">
+						<Candidate type="Path">
+							<Value>pages\idbviewer\idb.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="idb.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/idbviewer/idb.js">
+						<Candidate type="Path">
+							<Value>pages\idbviewer\idb.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="IndexedDBViewer.css" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/idbviewer/IndexedDBViewer.css">
+						<Candidate type="Path">
+							<Value>pages\idbviewer\IndexedDBViewer.css</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="Sample">
+						<NamedResource name="IndexedDBViewerSample.html" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/idbviewer/Sample/IndexedDBViewerSample.html">
+							<Candidate type="Path">
+								<Value>pages\idbviewer\Sample\IndexedDBViewerSample.html</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="marque">
+					<NamedResource name="marque.css" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/marque/marque.css">
+						<Candidate type="Path">
+							<Value>pages\marque\marque.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="marque.html" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/marque/marque.html">
+						<Candidate type="Path">
+							<Value>pages\marque\marque.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="marque.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/marque/marque.js">
+						<Candidate type="Path">
+							<Value>pages\marque\marque.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="synchro">
+					<NamedResource name="synchro.css" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/synchro/synchro.css">
+						<Candidate type="Path">
+							<Value>pages\synchro\synchro.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="synchro.html" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/synchro/synchro.html">
+						<Candidate type="Path">
+							<Value>pages\synchro\synchro.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="synchro.js" uri="ms-resource://cb20c0d6-1fce-41d5-b733-6594f39693e1/Files/pages/synchro/synchro.js">
+						<Candidate type="Path">
+							<Value>pages\synchro\synchro.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

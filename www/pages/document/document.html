@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>document</title>
+
+    <!-- Références WinJS -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="document.css" rel="stylesheet" />
+    <script src="document.js"></script>
+    <script src="../../js/metier/outils/file.js"></script>
+</head>
+<body>
+    <div data-win-control="WinJS.UI.NavBar">
+        <div data-win-control="WinJS.UI.NavBarContainer">
+            <div id="back-navbar" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{icon:WinJS.UI.AppBarIcon.back, label:'Précédent'}"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{icon:WinJS.UI.AppBarIcon.home, location:'/pages/accueil/accueil.html', label:'Accueil'}"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{icon:WinJS.UI.AppBarIcon.sync, location:'/pages/synchro/synchro.html', label:'Synchronistation'}"></div>
+        </div>
+    </div>
+    <div class="document fragment fond">
+        <header aria-label="Header content">
+            <div class="grille">
+                <div class="logo">
+                    <img id="logo" alt="logo" src="/images/logo_societe.png" class="animateClick">
+                </div>
+                <div class="promo">
+                    <img id="promo" alt="promo" src="/images/promo.png" class="animateClick">
+                </div>
+            </div>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="ariane" data-title="MARQUES : ">
+                <ul class="breadcrumb"></ul>
+            </div>            
+            
+            <!-- Template breadcrumb -->
+            <div id="breadcrumbTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                <li><a href="#" data-win-bind="textContent: item;"></a></li>
+            </div>
+
+            <!-- Template item -->
+            <div class="docTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                <div data-win-bind="this['data-id']: id WinJS.Binding.setAttribute; this['data-dossier']: dossier_id WinJS.Binding.setAttribute; this['data-chemin']: chemin_fichier WinJS.Binding.setAttribute; this['data-nom']: nom WinJS.Binding.setAttribute; className: classe">
+                    <span data-win-bind="textContent: nom"></span>
+                </div>
+            </div>
+
+            <!-- Liste -->
+            <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource : Elipce.Docs.data.dataSource, itemTemplate: select('.docTemplate'),layout: {type: WinJS.UI.GridLayout}}">
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

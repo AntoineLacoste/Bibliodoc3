@@ -1,0 +1,38 @@
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\builds\bibliodoc-mobile\resources.pri
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\builds\bibliodoc-mobile\AppxManifest.xml
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\builds\bibliodoc-mobile\bibliodoc-mobile.build.appxrecipe
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\builds\bibliodoc-mobile\AppPackages\bibliodoc-mobile_1.0.0.0_AnyCPU_Debug_Test\bibliodoc-mobile_1.0.0.0_AnyCPU_Debug.appx
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\ReverseMap\resources.pri
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\AppxManifest.xml
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\bibliodoc-mobile.build.appxrecipe
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\priconfig.xml
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\priconfig.xml.intermediate
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\layout.resfiles
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\layout.resfiles.intermediate
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\resources.resfiles
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\resources.resfiles.intermediate
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\pri.resfiles
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\pri.resfiles.intermediate
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\qualifiers.txt
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\qualifiers.txt.intermediate
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\vivian_boulot\Bibliodoc EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\ProjectArchitectures.txt
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\builds\bibliodoc-mobile\resources.pri
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\builds\bibliodoc-mobile\AppxManifest.xml
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\builds\bibliodoc-mobile\bibliodoc-mobile.build.appxrecipe
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\builds\bibliodoc-mobile\AppPackages\bibliodoc-mobile_1.0.0.0_AnyCPU_Debug_Test\bibliodoc-mobile_1.0.0.0_AnyCPU_Debug.appx
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\priconfig.xml
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\priconfig.xml.intermediate
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\layout.resfiles
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\layout.resfiles.intermediate
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\resources.resfiles
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\resources.resfiles.intermediate
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\pri.resfiles
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\pri.resfiles.intermediate
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\qualifiers.txt
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\qualifiers.txt.intermediate
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bld\Debug\ProjectArchitectures.txt
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\AppxManifest.xml
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\bibliodoc-mobile.build.appxrecipe
+E:\vivian_boulot\Bibliodoc_EPS\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\resources.pri
