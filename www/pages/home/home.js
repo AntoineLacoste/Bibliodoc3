@@ -1,10 +1,10 @@
 ﻿(function () {
     "use strict";
 
-    WinJS.UI.Pages.define("/pages/home/home.html", {
+    WinJS.UI.Pages.define("./pages/home/home.html", {
         // Cette fonction est appelée chaque fois qu'un utilisateur accède à cette page. Elle
         // remplit les éléments de la page avec les données d'application.
-        ready: function (element, options) {        
+        ready: function (element, options) {
             // Pas de chargement visible
             Chargement(false);
 
@@ -64,7 +64,7 @@
                         // Connexion OK
                         else {
                             // Navigation
-                            WinJS.Navigation.navigate('/pages/accueil/accueil.html', false);
+                            WinJS.Navigation.navigate('../../pages/accueil/accueil.html', false);
                         }
                     }
 
@@ -117,9 +117,7 @@
                         // Fin chargment
                         Chargement(false);
                         // Message
-                        var msg = new Windows.UI.Popups.MessageDialog("Mauvais login et / ou mot de passe");
-                        // Show the message dialog
-                        msg.showAsync();
+                        alertMssg("Mauvais login et / ou mot de passe",null,"Erreur","Fermer");
                     }
                         // Connexion OK
                     else {
@@ -150,16 +148,14 @@
                                     //console.log('user %o', aTab['utilisateur']);
                                     WinJS.Namespace.define("Elipce.User", aTab['utilisateur'][0]);
                                     // Navigation vers accueil
-                                    WinJS.Navigation.navigate('/pages/accueil/accueil.html');
+                                    WinJS.Navigation.navigate('../../pages/accueil/accueil.html');
                                 }
                             },
                             function error(result) {
                                 // Fin chargment
                                 Chargement(false);
                                 // Message
-                                var msg = new Windows.UI.Popups.MessageDialog("Erreur d'initialisation de l'application, veuillez désinstaller puis réinstaller votre application SVP. Merci.");
-                                // Show the message dialog
-                                msg.showAsync();
+                                alertMssg("Erreur d'initialisation de l'application, veuillez désinstaller puis réinstaller votre application SVP. Merci.",null,"Erreur","Fermer");
                                 // handle error conditions.
                                 console.log('error init REST %o', result);
                             }
@@ -174,9 +170,7 @@
                 // handle error conditions.
                 console.log('error REST %o', result);
                 // Message
-                var msg = new Windows.UI.Popups.MessageDialog("Lors de la première connexion, veuillez vous connecter à internet via Wifi, 3G ou 4G");
-                // Show the messag
-                msg.showAsync();
+                alertMssg("Lors de la synchronisation, veuillez être connecté à internet via Wifi (conseillé), 3G ou 4G.",null,"Erreur connexion","Fermer");
             });
     }
 

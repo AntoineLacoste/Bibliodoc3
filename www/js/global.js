@@ -57,7 +57,7 @@
                 GetAllFromDossier(oMarque.dossier_id).then(function (aDoss) {
                     if (aDoss.length > 0) {
                         // Affichage des elements
-                        WinJS.Navigation.navigate('/pages/document/document.html', { docs: aDoss, breadcrumb: [{item: "Promotions"}] });
+                        WinJS.Navigation.navigate('../../pages/document/document.html', { docs: aDoss, breadcrumb: [{item: "Promotions"}] });
                     }
                 });
             });
@@ -112,7 +112,12 @@ function RechercherMarques(lettre) {
     // Variables
     var aData = [];
     // Connexion BDD
-    var req = window.indexedDB.open(Elipce.Bdd.nom);
+    var IDB = window.indexedDB || 
+                    window.mozIndexedDB ||
+                    window.webkitIndexedDB || 
+                    window.msIndexedDB || 
+                    window.shimIndexedDB;
+    var req = IDB.open(Elipce.Bdd.nom);
     // Ouverture BDD ok
     req.onsuccess = function (e) {
         // Handler de connexion
@@ -181,7 +186,7 @@ function RechercherMarques(lettre) {
                 transaction.oncomplete = function (e) {
                     if (aData.length > 0) {
                         //console.log('tableau final %o', aData);
-                        WinJS.Navigation.navigate('/pages/marque/marque.html', { marques: aData, breadcrumb: [{ item: 'MARQUES' },{ item: lettre.toUpperCase() }] });
+                        WinJS.Navigation.navigate('../../pages/marque/marque.html', { marques: aData, breadcrumb: [{ item: 'MARQUES' },{ item: lettre.toUpperCase() }] });
                     }
                     else {
                         // Message
@@ -257,7 +262,12 @@ function GetPromotionFromSociete() {
         // Variables
         var aData = [];
         // Connexion BDD
-        var req = window.indexedDB.open(Elipce.Bdd.nom);
+        var IDB = window.indexedDB || 
+                    window.mozIndexedDB ||
+                    window.webkitIndexedDB || 
+                    window.msIndexedDB || 
+                    window.shimIndexedDB;
+        var req = IDB.open(Elipce.Bdd.nom);
         // Overture BDD ok
         req.onsuccess = function (e) {
             // Handler de connexion

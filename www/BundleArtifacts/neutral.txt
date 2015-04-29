@@ -1,2 +1,0 @@
-MainPackage=C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\bibliodoc-elipce-mobile_1.0.0.3_Bundle\bibliodoc-elipce-mobile_1.0.0.3_AnyCPU_Debug.appx
-ResourcePack=C:\Antoine\Partage\Bibliodoc_Elipce\sources\bibliodoc-mobile\bibliodoc-mobile\bin\Debug\bibliodoc-elipce-mobile_1.0.0.3_Bundle\bibliodoc-elipce-mobile_1.0.0.3_scale-180.appx

@@ -3,7 +3,7 @@
 (function () {
     "use strict";
 
-    WinJS.UI.Pages.define("/pages/synchro/synchro.html", {
+    WinJS.UI.Pages.define("./pages/synchro/synchro.html", {
 
         // Cette fonction est appelée chaque fois qu'un utilisateur accède à cette page. Elle
         // remplit les éléments de la page avec les données d'application.
@@ -163,9 +163,7 @@
                                             });
                                     }
                                     else{
-                                        var msg = new Windows.UI.Popups.MessageDialog("Le catalogue est à jour");
-                                        // Show the message dialog
-                                        msg.showAsync();
+                                        AlertMssg("Le catalogue est à jour",null,"Synchronisation","Fermer");
                                     }
 
                                 }
@@ -175,9 +173,7 @@
                                 // handle error conditions.
                                 console.log('Erreur WS synchro %o', request);
                                 // Message
-                                var msg = new Windows.UI.Popups.MessageDialog("Lors de la synchronisation, veuillez être connecté à internet via Wifi (conseillé), 3G ou 4G.");
-                                // Show the message dialog
-                                msg.showAsync();
+                                alertMssg("Lors de la synchronisation, veuillez être connecté à internet via Wifi (conseillé), 3G ou 4G.",null,"Erreur connexion","Fermer");
                             });//Fin ws synchro
 
                             }
@@ -241,9 +237,7 @@
                                 // handle error conditions.
                                 console.log('Erreur WS synchro_init %o', result);
                                 // Message
-                                var msg = new Windows.UI.Popups.MessageDialog("Erreur lors de la synchronisation, veuillez vous connecter à internet via Wifi (conseillé), 3G ou 4G.");
-                                // Show the message dialog
-                                msg.showAsync();
+                                alertMssg("Lors de la synchronisation, veuillez être connecté à internet via Wifi (conseillé), 3G ou 4G.",null,"Erreur connexion","Fermer");
                             });
                     }
                

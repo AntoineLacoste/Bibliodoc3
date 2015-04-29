@@ -7,7 +7,7 @@
 
     
 
-    WinJS.UI.Pages.define("/pages/document/document.html", {
+    WinJS.UI.Pages.define("./pages/document/document.html", {
         
         init: function (element, options) {
 

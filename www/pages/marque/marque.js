@@ -9,7 +9,7 @@
 
    
 
-    WinJS.UI.Pages.define("/pages/marque/marque.html", {
+    WinJS.UI.Pages.define("./pages/marque/marque.html", {
 
 
         init: function (element, options) {
@@ -50,7 +50,7 @@
                         docs = aAll;
                     }).done(function () {
                         // Affichage des elements
-                        WinJS.Navigation.navigate('/pages/document/document.html', { docs: docs, breadcrumb: that.aBreadcrumb });
+                        WinJS.Navigation.navigate('../../pages/document/document.html', { docs: docs, breadcrumb: that.aBreadcrumb });
                     });
                 }
             });

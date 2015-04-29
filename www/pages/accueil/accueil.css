@@ -6,7 +6,7 @@
 
 .touche{
 	display:inline-block;
-	background-image:url("/images/touche.png");
+	background-image:url("../../images/touche.png");
 	margin: 5px;
 	width:102px;
 	height:102px;

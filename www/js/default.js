@@ -1,8 +1,10 @@
-﻿// Pour obtenir une présentation du modèle Navigation, consultez la documentation suivante :
-// http://go.microsoft.com/fwlink/?LinkId=232506
-(function () {
+﻿(function () {
     "use strict";
 
+    var app = WinJS.Application;
+    var nav = WinJS.Navigation;
+    var sched = WinJS.Utilities.Scheduler;
+    var ui = WinJS.UI;
 
 
     if(navigator.userAgent.match(/Chrome|Trident/)){
@@ -11,38 +13,23 @@
     else{
         document.addEventListener("deviceready", init, false);
     }
-    
+
     function init(){
-    var app = WinJS.Application;
-    var nav = WinJS.Navigation;
-    var sched = WinJS.Utilities.Scheduler;
-    var ui = WinJS.UI;
 
-    app.addEventListener("activated", function (args) {
+        nav.history = app.sessionState.history || {};
+        nav.history.current.initialPlaceholder = true;
 
-            nav.history = app.sessionState.history || {};
-            nav.history.current.initialPlaceholder = true;
+        // Optimize the load of the application and while the splash screen is shown, execute high priority scheduled work.
+        ui.disableAnimations();
+        var p = ui.processAll().then(function () {
+            return nav.navigate(nav.location || Application.navigator.home, nav.state);
+        }).then(function () {
+            return sched.requestDrain(sched.Priority.aboveNormal + 1);
+        }).then(function () {
+            ui.enableAnimations();
+        });
 
-            // Optimisez la charge de l'application et lorsque l'écran de démarrage s'affiche, exécutez le travail planifié de haute priorité.
-            ui.disableAnimations();
-            var p = ui.processAll().then(function () {
-            var page = nav.location || Application.navigator.home;
-                // TODO
-                if (Elipce.Bdd.dev) {
-                    //page = '/pages/accueil/accueil.html';
-                }
-                return nav.navigate(page, nav.state);
-            }).then(function () {
-                return sched.requestDrain(sched.Priority.aboveNormal + 1);
-            }).then(function () {
-                ui.enableAnimations();
-            });
-
-            args.setPromise(p);
-
-        // Initialisation de la charm bar 
-        initializeSettingsPane();
-
+        
         // App Bar
         WinJS.Utilities.query('#search').listen('keypress', function (e) {
             // Enter
@@ -51,7 +38,7 @@
                 RechercherMarques(e.target.value);
             }
         });
-    });
+    }
         
     app.oncheckpoint = function (args) {
         // TODO: cette application est sur le point d'être suspendue. Enregistrez tout état
@@ -68,30 +55,8 @@
         // args.detail contient les détails de la navigation qui vient d'avoir lieu
         initApplication();
     });
-
-}
 })();
 
-
-function initializeSettingsPane() {
-	/// <summary>
-	/// Initialize la charm bar en ajoutant le bouton déconnexion 
-    /// </summary>
-
-    // Charm bar
-    var settingsPane = Windows.UI.ApplicationSettings.SettingsPane.getForCurrentView();
-    settingsPane.addEventListener("commandsrequested", function (eventArgs) {
-        // Bouton Déconnexion de la charm bar
-        var settingsCommand = new Windows.UI.ApplicationSettings.SettingsCommand("deco", "Déconnexion",
-               function () {
-                   // Navigation page de connexion
-                   WinJS.Navigation.navigate('/pages/home/home.html', false);
-               });
-        // Ajout du bouton à la charmbar
-        eventArgs.request.applicationCommands.append(settingsCommand);
-    });
-
-}
 
 
 WinJS.Namespace.define("Elipce.Bdd", {
@@ -105,12 +70,12 @@ if (Elipce.Bdd.dev) {
 }
 
 WinJS.Namespace.define("Elipce.Ws", {
-    racine: (Elipce.Bdd.dev ? "http://192.168.1.22/bibliodoc-web/ws/index.php/" : "http://85.14.137.12/elipce/bibliodoc-web/ws/index.php/")
+    racine: (Elipce.Bdd.dev ? "http://192.168.1.16/bibliodoc-web/ws/index.php/" : "http://85.14.137.12/elipce/bibliodoc-web/ws/index.php/")
 });
 
 WinJS.Namespace.define("Elipce.Document", {
 
-    bibliodoc: (Elipce.Bdd.dev ? "http://192.168.1.22/projects/bibliodoc-web/application/" : "http://85.14.137.12/elipce/bibliodoc-web/application/")
+    bibliodoc: (Elipce.Bdd.dev ? "http://192.168.1.16/projects/bibliodoc-web/application/" : "http://85.14.137.12/elipce/bibliodoc-web/application/")
 });
 
 function InsertDataTest() {

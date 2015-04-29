@@ -3,7 +3,7 @@
 (function () {
     "use strict";
 
-    WinJS.UI.Pages.define("/pages/accueil/accueil.html", {
+    WinJS.UI.Pages.define("./pages/accueil/accueil.html", {
 
         // Cette fonction est appelée chaque fois qu'un utilisateur accède à cette page. Elle
         // remplit les éléments de la page avec les données d'application.
@@ -11,6 +11,7 @@
         ready: function (element, options) {
 
             // IDB viewer en mode dev
+            console.log("coucou");
             if (Elipce.Bdd.dev) {
                 var navContainer = WinJS.Utilities.query('#navbar_container', element).get(0);
                 navContainer.innerHTML += '<div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ icon: WinJS.UI.AppBarIcon.memo, location: \'/pages/idbviewer/idb.html\', label: \'IDB\' }"></div>';

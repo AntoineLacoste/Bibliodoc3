@@ -9,7 +9,12 @@
     var dbHandle = null;
     try {
         // Tentative de Connexion à la BDD
-        var req = window.indexedDB.open(nomDb, 2);
+        var IDB = window.indexedDB || 
+                    window.mozIndexedDB ||
+                    window.webkitIndexedDB || 
+                    window.msIndexedDB || 
+                    window.shimIndexedDB;
+        var req = IDB.open(nomDb, 2);
 
         // Création / ouverture OK
         req.onsuccess = function (e) {
@@ -48,8 +53,7 @@
     }
     catch (ex) {
         // Affichage message erreur
-        var mess1 = new Windows.UI.Popups.MessageDialog(ex.message);
-        mess1.showAsync();
+        alertMssg(ex.message,null,"Erreur","Fermer");
     }
 }
 
@@ -77,7 +81,12 @@ function InsertData(nomDb, nomTable, aObjets, fctError) {
     // Gestion erreurs
     var err = (fctError===undefined?function (e){console.log("erreur InsertData table:" + nomTable+' '+e.message);}:fctError);
     // Connexion BDD
-    var db = window.indexedDB.open(nomDb);
+    var IDB = window.indexedDB || 
+                    window.mozIndexedDB ||
+                    window.webkitIndexedDB || 
+                    window.msIndexedDB || 
+                    window.shimIndexedDB;
+    var db = IDB.open(nomDb);
     // Connexion OK
     if (db) {
         // Callback de connexion réussi
@@ -137,7 +146,12 @@ function DeleteData(nomdB, keyObjet, nomTable, fctError) {
     // Gestion erreurs
     var err = (fctError===undefined?function (e){console.log("erreur InsertData table:" + nomTable+' '+e.message);}:fctError);
     // Connexion BDD
-    var db = window.indexedDB.open(nomdB);
+    var IDB = window.indexedDB || 
+                    window.mozIndexedDB ||
+                    window.webkitIndexedDB || 
+                    window.msIndexedDB || 
+                    window.shimIndexedDB;
+    var db = IDB.open(nomdB);
     // Connexion OK
     if (db) {
         // Callback de connexion réussi
@@ -169,7 +183,12 @@ function ReadAll(nomDb, nomTable, fctSuccess, fctError) {
 
 
     // Connexion BDD
-    var req = window.indexedDB.open(nomDb);
+    var IDB = window.indexedDB || 
+                    window.mozIndexedDB ||
+                    window.webkitIndexedDB || 
+                    window.msIndexedDB || 
+                    window.shimIndexedDB;
+    var req = IDB.open(nomDb);
     // Variables
     var aData = [];
     // Overture BDD ok
@@ -239,7 +258,12 @@ function Read(nomDb, magasins, magCondition, nomIndex, range) {
     // Promise
     return new WinJS.Promise(function (ok, ko) {
         // Connexion BDD
-        var req = window.indexedDB.open(nomDb);
+        var IDB = window.indexedDB || 
+                    window.mozIndexedDB ||
+                    window.webkitIndexedDB || 
+                    window.msIndexedDB || 
+                    window.shimIndexedDB;
+        var req = IDB.open(nomDb);
         // Variables
         var aData = [];
         // Overture BDD ok
