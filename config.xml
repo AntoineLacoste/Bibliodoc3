@@ -7,7 +7,7 @@
     <author email="developer@example.com" href="http://example.com">
         Antoien Lacoste
     </author>
-    <content src="default.html" />
+    <content src="index.html" />
     <plugin name="org.apache.cordova.dialogs"/>
     <access origin="*" />
 </widget>
