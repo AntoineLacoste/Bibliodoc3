@@ -3,9 +3,7 @@
         "source": {
             "type": "registry",
             "id": "org.apache.cordova.dialogs"
-        },
-        "is_top_level": true,
-        "variables": {}
+        }
     },
     "com.msopentech.websql": {
         "source": {
