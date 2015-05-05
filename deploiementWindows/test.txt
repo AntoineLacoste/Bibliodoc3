@@ -1,0 +1,1 @@
+add-appxpackage E:\vivian_boulot\Bibliodoc_Elipce\deploiement\sources\bibliodoc-elipce-mobile_1.0.0.1_Debug_Test\bibliodoc-elipce-mobile_1.0.0.1_AnyCPU_Debug.appxbundle -DependencyPath E:\vivian_boulot\Bibliodoc_Elipce\deploiement\sources\bibliodoc-elipce-mobile_1.0.0.1_Debug_Test\Dependencies\Microsoft.WinJS.2.0.appx

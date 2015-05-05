@@ -1,4 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
+<widget id="com.bibliodoc" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Bibliodoc</name>
+    <description>
+    </description>
+    <author>
+        Antoine Lacoste
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <plugin name="org.apache.cordova.dialogs"/>
+=======
 <widget id="com.hello" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HelloWorldGulp</name>
     <description>
@@ -23,4 +35,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+>>>>>>> origin/master
 </widget>
