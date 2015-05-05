@@ -39,23 +39,11 @@
         // ui.processAll();
     }
 
-    app.oncheckpoint = function (args) {
-        // TODO: cette application est sur le point d'être suspendue. Enregistrez tout état
-        // devant être conservé lors des suspensions ici. Si vous devez
-        // effectuer une opération asynchrone avant la suspension de
-        // l'application, appelez args.setPromise().
-        app.sessionState.history = nav.history;
-    };
-
-    app.start();
-
-    // Ecoute de l'événement navigated
-
 })();
 
 
 WinJS.Navigation.addEventListener('navigated', function (args) {
-    // args.detail contient les détails de la navigation qui vient d'avoir lieu
+
     catalogue.initPage();
 });
 
