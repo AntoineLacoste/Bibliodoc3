@@ -1,29 +1,25 @@
 ﻿function CreateDatabase(nomDb, objetStructure) {
-	/// <summary>
+    /// <summary>
     /// Créé une BDD
-	/// </summary>
+    /// </summary>
     /// <param name="nomDb">nom de la BDD</param>
     /// <param name="objetStructure">{ 'table1': [ [champ1,bUnique], ... ], ...}</param>
 
     // Variables
     var dbHandle = null;
-
     try {
         // Tentative de Connexion à la BDD
-        var req;
-        if (window.indexedDB) {
-            console.log('Opening Native IndexedDB');
-            req = window.indexedDB.open(nomDb,2);
-        }
-        else {
-            console.log('Opening IndexedDB Shimm');
-            req = window.shimIndexedDB.open(nomDb,2);
-        }
+        var IDB = window.indexedDB ||
+            window.mozIndexedDB ||
+            window.webkitIndexedDB ||
+            window.msIndexedDB ||
+            window.shimIndexedDB;
+        var req = IDB.open(nomDb, 2);
 
         // Création / ouverture OK
         req.onsuccess = function (e) {
             dbHandle = e.target.result;
-            console.log('succes creation BDD '+nomDb);
+            console.log('succes creation BDD');
             dbHandle.close();
         }
         // Création / ouverture KO
@@ -33,10 +29,8 @@
         req.onblocked = function (e) { console.log('blocked BDD'); }
 
         // Si la BDD n'existe pas => Création structure BDD
-        console.log('anduin');
         req.onupgradeneeded = function (e) {
             // Récupération de la connexion
-            console.log('anduin1');
             dbHandle = e.target.result;
 
             var store;
@@ -44,7 +38,6 @@
             for (var nomStore in objetStructure) {
                 var aIndex = objetStructure[nomStore];
                 // Création magasin
-                console.log('table créer : ' + nomStore);
                 store = e.currentTarget.result.createObjectStore(nomStore, { keyPath: "id", autoIncrement: true });
                 // Parcours des index du magasin (champs en SQL)
                 for (var index in aIndex) {
@@ -60,14 +53,14 @@
     }
     catch (ex) {
         // Affichage message erreur
-        navigator.notification.alert(ex.message,null,null,null);
+        alertMssg(ex.message,null,"Erreur","Fermer");
     }
 }
 
 function DeleteDatabase(dbName) {
-	/// <summary>
+    /// <summary>
     /// Suppression BDD
-	/// </summary>
+    /// </summary>
     /// <param name="dbName">nom de la BDD à suppr</param>
 
     var dbRequest = window.indexedDB.deleteDatabase(dbName);
@@ -77,9 +70,9 @@ function DeleteDatabase(dbName) {
 }
 
 function InsertData(nomDb, nomTable, aObjets, fctError) {
-	/// <summary>
+    /// <summary>
     /// Insertion de données dans la BDD (UPDATE est identique)
-	/// </summary>
+    /// </summary>
     /// <param name="nomDb">nom de la BDD</param>
     /// <param name="nomTable">nom du magasin concerné par l'insertion</param>
     /// <param name="aObjet">Tableau d'(objets JSON à insérer dans le magasin ex: [{"id": 2,"marque_id": 2,"societe_id": 1}, {"id": 1,"marque_id": 1,"societe_id": 2}]</param>
@@ -88,15 +81,12 @@ function InsertData(nomDb, nomTable, aObjets, fctError) {
     // Gestion erreurs
     var err = (fctError===undefined?function (e){console.log("erreur InsertData table:" + nomTable+' '+e.message);}:fctError);
     // Connexion BDD
-        var db;
-        if (window.indexedDB) {
-            console.log('Opening Native IndexedDB');
-            db = window.indexedDB.open(nomDb);
-        }
-        else {
-            console.log('Opening IndexedDB Shimm');
-            db = window.shimIndexedDB.open(nomDb);
-        }
+    var IDB = window.indexedDB ||
+        window.mozIndexedDB ||
+        window.webkitIndexedDB ||
+        window.msIndexedDB ||
+        window.shimIndexedDB;
+    var db = IDB.open(nomDb);
     // Connexion OK
     if (db) {
         // Callback de connexion réussi
@@ -121,17 +111,17 @@ function InsertData(nomDb, nomTable, aObjets, fctError) {
         }
     }
     // Connexion KO
-    db.onerror = err;  
+    db.onerror = err;
 }
 
-/** 
-  * Mise à jour de données dans la BDD
-  * @param nomDb: nom de la BDD
-  * @param nomTable: nom du magasin concerné par l'insertion
-  * @param objet: ojet à insérer dans le magasin*
-  * @param fctError: (facultatif) fonction permettant de gérer l'erreur
-  * @return: pas de retour car fonction asynchrone.
-  */
+/**
+ * Mise à jour de données dans la BDD
+ * @param nomDb: nom de la BDD
+ * @param nomTable: nom du magasin concerné par l'insertion
+ * @param objet: ojet à insérer dans le magasin*
+ * @param fctError: (facultatif) fonction permettant de gérer l'erreur
+ * @return: pas de retour car fonction asynchrone.
+ */
 function UpdateData(nomDb, nomTable, objet, fctError) {
     /// <summary>
     /// Insertion de données dans la BDD (UPDATE est identique)
@@ -145,9 +135,9 @@ function UpdateData(nomDb, nomTable, objet, fctError) {
 }
 
 function DeleteData(nomdB, keyObjet, nomTable, fctError) {
-	/// <summary>
+    /// <summary>
     /// Suppression de données dans la BDD (UPDATE est identique)
-	/// </summary>
+    /// </summary>
     /// <param name="nomdB">nom de la BDD</param>
     /// <param name="keyObjet"> clé de l'objet à supprimer</param>
     /// <param name="nomTable">nom du magasin concerné par l'insertion</param>
@@ -156,15 +146,12 @@ function DeleteData(nomdB, keyObjet, nomTable, fctError) {
     // Gestion erreurs
     var err = (fctError===undefined?function (e){console.log("erreur InsertData table:" + nomTable+' '+e.message);}:fctError);
     // Connexion BDD
-        var db;
-        if (window.indexedDB) {
-            console.log('Opening Native IndexedDB');
-            db = window.indexedDB.open(nomDb);
-        }
-        else {
-            console.log('Opening IndexedDB Shimm');
-            db = window.shimIndexedDB.open(nomDb);
-        }
+    var IDB = window.indexedDB ||
+        window.mozIndexedDB ||
+        window.webkitIndexedDB ||
+        window.msIndexedDB ||
+        window.shimIndexedDB;
+    var db = IDB.open(nomdB);
     // Connexion OK
     if (db) {
         // Callback de connexion réussi
@@ -184,9 +171,9 @@ function DeleteData(nomdB, keyObjet, nomTable, fctError) {
 }
 
 function ReadAll(nomDb, nomTable, fctSuccess, fctError) {
-	/// <summary>
+    /// <summary>
     /// Récupérer toutes les lignes d'une table (TESTEE)
-	/// </summary>
+    /// </summary>
     /// <param name="nomDb">nom de la BDD</param>
     /// <param name="nomTable">nom du magasin (ou table en SQL)</param>
     /// <param name="fctSuccess">fonction de callback permettant de traiter les données récupérées sous forme de tableau (1 param) 
@@ -196,15 +183,12 @@ function ReadAll(nomDb, nomTable, fctSuccess, fctError) {
 
 
     // Connexion BDD
-        var req;
-        if (window.indexedDB) {
-            console.log('Opening Native IndexedDB');
-            req = window.indexedDB.open(nomDb);
-        }
-        else {
-            console.log('Opening IndexedDB Shimm');
-            req = window.shimIndexedDB.open(nomDb);
-        }
+    var IDB = window.indexedDB ||
+        window.mozIndexedDB ||
+        window.webkitIndexedDB ||
+        window.msIndexedDB ||
+        window.shimIndexedDB;
+    var req = IDB.open(nomDb);
     // Variables
     var aData = [];
     // Overture BDD ok
@@ -270,19 +254,16 @@ function Read(nomDb, magasins, magCondition, nomIndex, range) {
     ///                               tab = 0 si la BDD n'est pas initialisée ou table n'existe pas.</param>
     /// <param name="fctError">(facultatif) fonction permettant de gérer l'erreur (1 param evt)</param>
 
-    
+
     // Promise
-    return new Promise(function (ok, ko) {
+    return new WinJS.Promise(function (ok, ko) {
         // Connexion BDD
-        var req;
-        if (window.indexedDB) {
-            console.log('Opening Native IndexedDB');
-            req = window.indexedDB.open(nomDb);
-        }
-        else {
-            console.log('Opening IndexedDB Shimm');
-            req = window.shimIndexedDB.open(nomDb);
-        }
+        var IDB = window.indexedDB ||
+            window.mozIndexedDB ||
+            window.webkitIndexedDB ||
+            window.msIndexedDB ||
+            window.shimIndexedDB;
+        var req = IDB.open(nomDb);
         // Variables
         var aData = [];
         // Overture BDD ok
@@ -305,48 +286,48 @@ function Read(nomDb, magasins, magCondition, nomIndex, range) {
                     var transaction = db.transaction(magasins, "readonly");
                     // Requete
                     var store = transaction.objectStore(magCondition);
-                        try {
-                            var cursorRequest;
-                            // Index
-                            if (nomIndex !== null) {
-                                cursorRequest = store.index(nomIndex + '_Index').openCursor(range);
+                    try {
+                        var cursorRequest;
+                        // Index
+                        if (nomIndex !== null) {
+                            cursorRequest = store.index(nomIndex + '_Index').openCursor(range);
+                        }
+                        // Clé primaire
+                        else {
+                            cursorRequest = store.openCursor(range);
+                        }
+                        // Résultats de la requete
+                        cursorRequest.onsuccess = function (e) {
+                            // On récupère la valeur lue par le curseur dans la variable reader
+                            var reader = e.target.result;
+                            // Lecture
+                            if (reader) {
+                                //if (reader.value[nomIndex] == valeur) {
+                                // Résultat dans un tableau
+                                aData.push(reader.value);
+                                //}
+                                // On continue de parcourir le magasin d'objet tant qu'il y a de la donnée à afficher
+                                reader.continue();
                             }
-                                // Clé primaire
+                            // Fin lecture
                             else {
-                                cursorRequest = store.openCursor(range);
+                                // Fin promise
+                                console.log('OK promise READ()');
+                                ok(aData);
                             }
-                            // Résultats de la requete
-                            cursorRequest.onsuccess = function (e) {
-                                // On récupère la valeur lue par le curseur dans la variable reader
-                                var reader = e.target.result;
-                                // Lecture 
-                                if (reader) {
-                                    //if (reader.value[nomIndex] == valeur) {
-                                    // Résultat dans un tableau
-                                    aData.push(reader.value);
-                                    //}
-                                    // On continue de parcourir le magasin d'objet tant qu'il y a de la donnée à afficher
-                                    reader.continue();
-                                }
-                                // Fin lecture
-                                else {
-                                    // Fin promise
-                                    console.log('OK promise READ()');
-                                    ok(aData);
-                                }
-                            }
-                            // Gestion erreur
-                            cursorRequest.onerror = function (e) {
-                                console.log('Impossible de parcourir le magasin ' + magCondition);
-                                ko('Impossible de parcourir le magasin ' + magCondition);
-                            };
                         }
-                        catch (ex) {
-                            //HandleException(ex, "L'index " + nomIndex + " n'existe pas ");
-                            // erreur
-                            console.log("L'index " + nomIndex + " n'existe pas ");
-                            ko("L'index " + nomIndex + " n'existe pas ");
-                        }
+                        // Gestion erreur
+                        cursorRequest.onerror = function (e) {
+                            console.log('Impossible de parcourir le magasin ' + magCondition);
+                            ko('Impossible de parcourir le magasin ' + magCondition);
+                        };
+                    }
+                    catch (ex) {
+                        //HandleException(ex, "L'index " + nomIndex + " n'existe pas ");
+                        // erreur
+                        console.log("L'index " + nomIndex + " n'existe pas ");
+                        ko("L'index " + nomIndex + " n'existe pas ");
+                    }
                 }
                 catch (ex) {
                     console.log("La table " + magCondition + " n'existe pas ");
@@ -357,7 +338,7 @@ function Read(nomDb, magasins, magCondition, nomIndex, range) {
         // On gère l'erreur d'ouverture de la base de données
         req.onerror = function (e) {
             console.log('erreur Read table:' + nomTable);
-            ko('erreur Read table:' + nomTable); 
+            ko('erreur Read table:' + nomTable);
         };
     });
 }
