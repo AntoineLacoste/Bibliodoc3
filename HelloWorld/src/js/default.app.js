@@ -1,12 +1,10 @@
-var $ = require('jquery');
-
 (function() {
 
 
     $(function() {
         console.log("" + navigator.userAgent);
 
-        if (navigator.userAgent.match(/iPhone|Android|IEMobile/)) {
+        if (navigator.userAgent.match(/iPad|iPhone|Android|IEMobile/)) {
             document.addEventListener("deviceready", onReady, false);
         }
         else {
