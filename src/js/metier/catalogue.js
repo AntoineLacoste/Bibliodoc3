@@ -380,7 +380,7 @@ function initApplication() {
     // App Bar
     function initPage() {
         WinJS.Utilities.query('#search').listen('keypress', function (e) {
-            // Enter
+            // Touche entrée
             if (e.keyCode == 13) {
                 // Recherche des marques par rapport à la saisie
                 RechercherMarques(e.target.value);
