@@ -377,6 +377,10 @@ function initApplication() {
         }
     }
 
+    function test(){
+        return "deviceReady";
+    }
+
     // App Bar
     function initPage() {
         WinJS.Utilities.query('#search').listen('keypress', function (e) {
@@ -409,6 +413,7 @@ module.exports.GetAllFromDossier = GetAllFromDossier;
 module.exports.GetPromotionFromSociete = GetPromotionFromSociete;
 module.exports.BreadcrumbBuilder = BreadcrumbBuilder;
 module.exports.alertMssg = alertMssg;
+module.exports.test = test;
 module.exports.initPage = initPage;
 module.exports.HandleException = HandleException;
 

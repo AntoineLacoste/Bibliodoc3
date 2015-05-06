@@ -14,7 +14,7 @@
 
         function initialize() {
             //catalogue.alertMssg("oucou",null);
-            navigator.notification.alert("%o"+catalogue,null);
+            navigator.notification.alert(""+catalogue.test(),null);
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
             var receivedElement = parentElement.querySelector('.received');
