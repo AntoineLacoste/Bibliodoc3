@@ -2,18 +2,13 @@
 (function() {
 
 
-    $(function() {
+    document.addEventListener("DOMContentLoaded", function(event) {
         console.log("" + navigator.userAgent);
 
         if (navigator.userAgent.match(/iPad|iPhone|Android|IEMobile/)) {
-            document.addEventListener("deviceready", onReady, false);
+            document.addEventListener("deviceready", initialize, false);
         }
         else {
-            onReady();
-        }
-
-        function onReady() {
-            // Handle the deviceready event.
             initialize();
         }
 
@@ -24,6 +19,7 @@
 
             listeningElement.setAttribute('style', 'display:none;');
             receivedElement.setAttribute('style', 'display:block;');
+            navigator.notification.alert("coucou",null);
         }
     });
 })();
