@@ -1,7 +1,4 @@
-(function() {
-
-
-    $(function() {
+document.addEventListener("DOMContentLoaded", function(event) {
         console.log("" + navigator.userAgent);
 
         if (navigator.userAgent.match(/iPad|iPhone|Android|IEMobile/)) {
@@ -25,4 +22,3 @@
             receivedElement.setAttribute('style', 'display:block;');
         }
     });
-})();
