@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+var $ = require('jquery');
+(function() {
+
+
+    $(function() {
         console.log("" + navigator.userAgent);
 
         if (navigator.userAgent.match(/iPad|iPhone|Android|IEMobile/)) {
@@ -22,3 +26,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
             receivedElement.setAttribute('style', 'display:block;');
         }
     });
+})();
