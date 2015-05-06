@@ -13,7 +13,7 @@
         }
 
         function initialize() {
-            navigator.notification.alert(""+catalogue,null);
+            navigator.notification.alert(""+WinJS.toString(),null);
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
             var receivedElement = parentElement.querySelector('.received');
