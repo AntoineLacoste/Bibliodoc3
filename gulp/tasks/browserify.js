@@ -9,25 +9,6 @@ var watchify = require('watchify');
 var bundleLogger= require('../util/bundleLogger');
 
 
-//gulp.task('browserify', function(){
-//
-//var tot=config.bundleConfigs();
-//    console.log("%o",tot);
-//    // TODO maybe it's worth trying to integrate watchify
-//    return browserify({
-//        entries: config.bundleConfigs().entries,
-//        extensions: ['.jsx'],
-//        paths: ['./node_modules','./src/js/']
-//    })
-//        .transform('reactify')
-//        .bundle({debug: true})
-//        .on('error', handleErrors)
-//        .pipe(source('global.app.js'))
-//        .pipe(gulp.dest('./www'));
-//
-//});
-
-
 //// TACHE BROWSERIFY FONCTIONNELLE MULTI BUNDLE
 gulp.task('browserify', function (callback) {
 

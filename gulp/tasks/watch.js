@@ -6,7 +6,7 @@ gulp.task('watch', function() {
 	gulp.watch('./src/js/**', ['browserify']);
 	gulp.watch('./src/img/**', ['images']);
 	gulp.watch('./src/css/**', ['styles']);
-	gulp.watch('./src/*.html', ['html']);
+	gulp.watch('./src/index.html', ['html']);
 
     // TODO probably need to start an emulator like Ripple or something ?
     var onJsChange = function(file) {

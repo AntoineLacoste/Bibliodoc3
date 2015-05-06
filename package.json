@@ -1,28 +1,30 @@
 {
-  "name": "bibliodoc",
+  "name": "stample-phonegap",
   "version": "0.0.1",
-  "description": "",
+  "description": "The stample phonegap hybrid app, using Gulp, Browserify and React",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stample/gulp-browserify-react-phonegap-starter.git"
+  },
   "keywords": [
     "stample",
     "phonegap",
     "react",
     "browserify"
   ],
-  "author": "Antoine Lacoste",
+  "author": "Sebastien Lorber",
   "license": "Apache",
   "dependencies": {
+    "brace-expansion": "^1.1.0",
     "cordova": "~3.4.1-0.1.0",
-    "fs": "0.0.2",
     "jquery": "~2.1.0",
-    "lodash": "^3.7.0",
     "react": "~0.10.0",
-    "sha1": "^1.1.0",
-    "underscore": "~1.1.2",
-    "winjs": "^3.0.1"
+    "underscore": "~1.1.2"
   },
   "devDependencies": {
-    "browserify": "^9.0.3",
-    "browserify-shim": "^3.8.5",
+    "brace-expansion": "^1.1.0",
+    "browserify": "~3.36.0",
+    "browserify-shim": "~3.4.1",
     "envify": "~1.2.1",
     "gulp": "~3.6.0",
     "gulp-changed": "~0.3.0",
@@ -31,12 +33,8 @@
     "gulp-notify": "~1.2.4",
     "gulp-recess": "~0.3.1",
     "gulp-util": "~2.2.14",
-    "indexeddbshim": "^1.0.11",
-    "pretty-hrtime": "^1.0.0",
     "reactify": "~0.13.1",
     "vinyl-source-stream": "~0.1.1",
-    "watchify": "=2.6.2",
-    "winjs": "^3.0.1",
     "wrench": "~1.5.8"
   },
   "browserify": {

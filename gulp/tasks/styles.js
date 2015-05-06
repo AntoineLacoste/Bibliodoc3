@@ -6,11 +6,11 @@ var handleErrors = require('../util/handleErrors');
 
 gulp.task('styles', function () {
 
-    return gulp.src('./src/css/*.css')
-        //.pipe(recess())
+    return gulp.src('./src/css/app.less')
+        .pipe(recess())
         .on('error', handleErrors) // TODO maybe we should still compile less files even if Recess is not happy
-        //.pipe(less())
+        .pipe(less())
         .on('error', handleErrors)
-        .pipe(gulp.dest('./www/css'));
+        .pipe(gulp.dest('./www'));
 
 });

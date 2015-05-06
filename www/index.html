@@ -1,30 +1,25 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Bibliodoc_mobile</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <title>Hello World</title>
 
-    <script src="js/global/global.app.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-    <script src="js/default.app.js"></script>
-    <script src="js/navigator.app.js"></script>
-    <script src="../node_modules/indexeddbshim/dist/indexeddbshim.min.js"></script>
-
-    <link href="../node_modules/winjs/css/ui-dark.css" rel="stylesheet" />
-    <link href="./css/default.css" rel="stylesheet" />
-
+    <script type="text/javascript" src="js/global/global.app.js"></script>
+    <script type="text/javascript" src="js/default.app.js"></script>
 </head>
 <body>
-<div id="test"/>
-<!-- Contenu -->
-<div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: './home.html'}"></div>
-
-<!--Boite de dialogue recherche-->
-<div id="searchFlyout" data-win-control="WinJS.UI.Flyout" aria-label="Recherche">
-    Recherche <input type="text" value="" name="search" id="search"/>
+<div class="app">
+    <h1>Apache Cordova</h1>
+    <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
+    </div>
 </div>
-
 </body>
 </html>
