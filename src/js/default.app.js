@@ -14,7 +14,14 @@
 
         function initialize() {
             //catalogue.alertMssg("oucou",null);
-            navigator.notification.alert(""+catalogue.test(),null);
+
+            navigator.notification.alert("toto",null);
+            if(catalogue!== undefined) {
+                navigator.notification.alert("" + catalogue.test(), null);
+            }
+            else{
+                navigator.notification.alert("catalogue undefined",null);
+            }
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
             var receivedElement = parentElement.querySelector('.received');
