@@ -19,7 +19,6 @@
 
             listeningElement.setAttribute('style', 'display:none;');
             receivedElement.setAttribute('style', 'display:block;');
-            navigator.notification.alert("coucou",null);
         }
     });
 })();
