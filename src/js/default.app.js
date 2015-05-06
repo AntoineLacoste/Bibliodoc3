@@ -2,7 +2,7 @@
 (function() {
 
 
-    document.addEventListener("DOMContentLoaded", function(event) {
+    $(function() {
         console.log("" + navigator.userAgent);
 
         if (navigator.userAgent.match(/iPad|iPhone|Android|IEMobile/)) {
