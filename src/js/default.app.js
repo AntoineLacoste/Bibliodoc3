@@ -2,7 +2,7 @@
 (function() {
 
 
-    $(function() {
+    document.addEventListener("DOMContentLoaded", function() {
         console.log("" + navigator.userAgent);
 
         if (navigator.userAgent.match(/iPad|iPhone|Android|IEMobile/)) {
@@ -19,6 +19,7 @@
 
             listeningElement.setAttribute('style', 'display:none;');
             receivedElement.setAttribute('style', 'display:block;');
+            catalogue.alertMssg("coucou",null,"coucou","coucou");
         }
     });
 })();
