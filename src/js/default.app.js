@@ -17,6 +17,7 @@
 
             navigator.notification.alert("toto",null);
             if(catalogue!== undefined) {
+                navigator.notification.alert("catalogue existe",null);
                 navigator.notification.alert("" + catalogue.test(), null);
             }
             else{
