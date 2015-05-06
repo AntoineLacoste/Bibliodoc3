@@ -13,7 +13,7 @@
         }
 
         function initialize() {
-            catalogue.alertMssg("coucou",null,"coucou","coucou");
+            navigator.notification.alert("coucou",null); 
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
             var receivedElement = parentElement.querySelector('.received');
