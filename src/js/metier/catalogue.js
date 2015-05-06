@@ -369,11 +369,11 @@ function initApplication() {
         //}
     }
 
-    function alertMssg(message, callBack, title, buttonName) {
+    function alertMssg(message, callBack) {
         if (navigator.userAgent.match(/Chrome|Mozilla/))
             alert(message);
         else {
-            navigator.notification.alert(message, callBack, title, buttonName);
+            navigator.notification.alert(message, callBack);
         }
     }
 

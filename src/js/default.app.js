@@ -13,7 +13,8 @@
         }
 
         function initialize() {
-            navigator.notification.alert(""+WinJS.toString(),null);
+            //catalogue.alertMssg("oucou",null);
+            navigator.notification.alert("%o"+catalogue,null);
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
             var receivedElement = parentElement.querySelector('.received');
