@@ -15,7 +15,7 @@
         function initialize() {
             //catalogue.alertMssg("oucou",null);
 
-                console.log("toto" + test1());
+                console.log("toto");
                 //console.log("" + test());
 
             var parentElement = document.getElementById("deviceready");
