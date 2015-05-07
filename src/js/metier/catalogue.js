@@ -1,5 +1,7 @@
+
+var idb = require("./bdd/idb");
+
 function initApplication() {
-    var idb = require("./bdd/idb");
         /// <summary>
         /// Initilise les événements génériques ex: animations, logo qui pointe sur accueil
         /// </summary>
@@ -78,7 +80,6 @@ function initApplication() {
     }
 
     function CreateIdbBibliodoc() {
-        var idb = require("./bdd/idb");
         /// <summary>
         /// Création de la structure de la BDD bibliodoc-mobile
         /// </summary>
@@ -201,7 +202,6 @@ function initApplication() {
 
 
     function GetAllFromDossier(idDos) {
-        var idb = require("./bdd/idb");
         /// <summary>
         /// Retourne tous les documents et le dossiers du dossier passé en param
         /// </summary>
