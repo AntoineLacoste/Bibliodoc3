@@ -15,9 +15,8 @@
         function initialize() {
             //catalogue.alertMssg("oucou",null);
 
-                alertMssg("toto",null);
-                alertMssg("" + test(), null);
-                alertMssg("catalogue existe",null);
+                console.log("toto");
+                console.log("" + test());
 
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
