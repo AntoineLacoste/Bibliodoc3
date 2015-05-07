@@ -15,14 +15,10 @@
         function initialize() {
             //catalogue.alertMssg("oucou",null);
 
-            navigator.notification.alert("toto",null);
-            if(catalogue!== undefined) {
-                navigator.notification.alert("catalogue existe",null);
-                navigator.notification.alert("" + catalogue.test(), null);
-            }
-            else{
-                navigator.notification.alert("catalogue undefined",null);
-            }
+                alertMssg("toto",null);
+                alertMssg("" + test(), null);
+                alertMssg("catalogue existe",null);
+
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
             var receivedElement = parentElement.querySelector('.received');
@@ -31,5 +27,12 @@
             receivedElement.setAttribute('style', 'display:block;');
         }
 
+        function alertMssg(message, callBack) {
+            if (navigator.userAgent.match(/Chrome|Mozilla/))
+                alert(message);
+            else {
+                navigator.notification.alert(message, callBack);
+            }
+        }
     });
 })();
