@@ -16,7 +16,7 @@
             //catalogue.alertMssg("oucou",null);
 
                 console.log("toto");
-                console.log("" + test());
+                //console.log("" + test());
 
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
