@@ -15,7 +15,7 @@
         function initialize() {
             //catalogue.alertMssg("oucou",null);
 
-                console.log("toto");
+                console.log("toto" + test1());
                 //console.log("" + test());
 
             var parentElement = document.getElementById("deviceready");
@@ -35,3 +35,7 @@
         }
     });
 })();
+
+function test1(){
+    return "deviceReady";
+}
