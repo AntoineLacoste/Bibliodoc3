@@ -16,8 +16,8 @@
             //catalogue.alertMssg("oucou",null);
 
                 alertMssg("toto",null);
-                //alertMssg("" + test(), null);
-                //alertMssg("catalogue existe",null);
+                alertMssg("" + test(), null);
+                alertMssg("catalogue existe",null);
 
             var parentElement = document.getElementById("deviceready");
             var listeningElement = parentElement.querySelector('.listening');
